@@ -1,0 +1,166 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+  <HEAD>
+		<TITLE>USPS 4-State Customer Barcode Decoder</TITLE>
+		<style type=text/css>
+		BODY {FONT-SIZE: 12px; FONT-FAMILY: arial}
+		TD {FONT-SIZE: 12px; FONT-FAMILY: arial}
+		P {	FONT-SIZE: 12px; FONT-FAMILY: arial}
+		</style>
+	</HEAD>
+<BODY leftMargin=0 topMargin=0 onload=SetActive()>
+<SCRIPT language=javascript>
+	function SetActive()
+	{
+		Form1.BarcodeChar.focus();
+	}
+	function GetTag()
+	{
+	//debugger			
+	//	Form1.HiddenText.value=Form1.BarcodeUI.getText();
+		Form1.submit();
+	}
+	
+</SCRIPT>
+
+<!--- header ---->
+
+     <table width="100%" border="0" cellpadding="6" cellspacing="4"> 
+       <tr>
+	 <td valign="top" align="left" width="5">
+         <br>&nbsp;&nbsp;
+    		<a href="http://www.usps.com" title="Visit USPS.com">
+     		<img border="0" src="/images/NAVBAR.GIF" alt="Go to the USPS Website"></a>	 
+	</td>
+
+         <td valign="bottom" colspan="3" align="right"><font style="font-weight: bold; font-size: 18px; font-family: Verdana, Arial; color: #000000;">Intelligent Mail<sup>®</sup> Barcode</font>
+  	</td>
+       </tr>
+
+<tr><td colspan="5" align="center"><hr color="#000000" noshade width="90%" size="2"></td>
+</tr>
+</table>
+
+<!--- Main Body ---->
+<table width="100%" border="0" cellpadding="6" cellspacing="4" height="100%"> 
+    <tr>
+	    <td valign=top><img src="images/barcode.gif" width="57" height="575" alt="RIBBS Intelligent Mail® Barcode Resource Download Site"> </td>
+    <td vAlign=top colSpan=3 height="100%" style="padding:6px;">
+     <form name="Form1" method="post" action="Barcode_Decoder.Aspx" id="Form1">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwxNTEyMzM0OTY7dDw7bDxpPDE+Oz47bDx0PDtsPGk8OT47aTwxMT47aTwxMz47aTwxNz47aTwyMT47aTwyNT47aTwyOT47aTwzMz47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8U3VjY2Vzczs+Pjs+Ozs+O3Q8cDxwPGw8VmlzaWJsZTs+O2w8bzx0Pjs+Pjs+Ozs+O3Q8cDxwPGw8SW1hZ2VVcmw7VmlzaWJsZTs+O2w8QmFyY29kZUdVSS5hc3B4P0JhcmNvZGU9IlRERlRUVEFBRkFBQURGVEZUVEFURERERlREQVRGRkRUQURGRlRUVFRGQUFUQUZUQURBRERBRlRERkZGQUZEREFUIjtvPHQ+Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwwMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjYwOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwxMDIzNzc7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDAwMDU3NjkyNTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NTUzNjk5MTI5NTY7Pj47Pjs7Pjs+Pjs+Pjs+HaNg2DqKIzNKzLwh2E2EOn6GDxo=" />
+
+<script language="javascript" type="text/javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.Form1;
+		}
+		else {
+			theform = document.forms["Form1"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+<br 
+      >You have reached the Intelligent Mail<sup>®</sup> barcode decoder 
+      page. Using this tool you can convert a Intelligent Mail<sup>®</sup> barcode into its numeric 
+      equivalent.<br>First, convert each bar of the Intelligent Mail<sup>®</sup> barcode 
+      into its character equivalent (F, T, A, or D) as described in the legend 
+      below. Then type the character<br> string into the barcode character field. 
+      Finally, click on the [Decode] button.<br><br 
+      ><span id="Label10"><strong>Barcode Character</strong> (enter a string of sixty five F, D, A, or T characters<!--- as indicated by the legend below --->):</span><br 
+      ><input name="BarcodeChar" type="text" value="TDFTTTAAFAAADFTFTTATDDDFTDATFFDTADFFTTTTFAATAFTADADDAFTDFFFAFDDAT" maxlength="65" id="BarcodeChar" tabindex="1" title="Enter Barcode character field" title="Barcode Character" NAME="BarcodeChar" SIZE="83" TYPE="text" /><br 
+      ><br><INPUT id=Decode title="Decode barcode" onclick=GetTag() tabIndex=1 type=button value=Decode> 
+			<!--- <input name="ButHelp" id="ButHelp" type="button" TITLE="Instruction how to" TABINDEX="2" value="Instruction" /><input type="button" Language="JavaScript" value="Return to Main page" tabindex="3" onclick='parent.location.href="index4.cfm"'/>
+<br><br> ---> 
+<input language="javascript" onclick="__doPostBack('ButHome','')" name="ButHome" id="ButHome" type="button" title="Return to Main Page" tabIndex="3" value="Return to Main Page" />
+      <table cellSpacing=0 cellPadding=0 border=0>
+        <tr>
+          <td colSpan=3><span id="LabelError" title="Error Message"><font color="Red">Success</font></span></TD></TR>
+        <tr>
+          <td><span id="LabelBarcode">Barcode:</span></TD>
+          <td colSpan=2><img id="Image2" title="Barcode Information" src="BarcodeGUI.aspx?Barcode=&quot;TDFTTTAAFAAADFTFTTATDDDFTDATFFDTADFFTTTTFAATAFTADADDAFTDFFFAFDDAT&quot;" alt="" border="0" height="30" width="350" /></TD></TR>
+        <tr>
+          <td><span id="Label1">Barcode ID:</span></TD>
+          <td><span id="LabelBCID">00</span></TD>
+          <td align=right width=250 rowSpan=5>
+            <TABLE id=Table1 borderColor=#400040 cellSpacing=1 cellPadding=0 
+            align=right bgColor=#ffffc0 border=1 
+            BORDERSTYLE="Solid" BORDERWIDTH="1px">
+              <TR>
+                <TD align=center><FONT face=Arial 
+                  ><STRONG 
+                  >Key</STRONG></FONT></TD>
+                <TD align=center><FONT face=Arial 
+                  ><FONT face=Arial 
+                  ><STRONG 
+                  >Description</STRONG></FONT></FONT></TD></TR>
+              <TR>
+                <TD align=center><FONT face=Arial 
+                  >&nbsp;<B 
+                >F</B></FONT></TD>
+                <TD align=left><FONT face=Arial 
+                  >&nbsp;<IMG height=15 alt="" src="..\images\BarF.ICO" >&nbsp;<B 
+                  >F</B>ull Bar<FONT face=Arial 
+                  ></FONT></FONT></TD></TR>
+              <TR>
+                <TD align=center><FONT face=Arial 
+                  >&nbsp;<B 
+                >D</B></FONT></TD>
+                <TD align=left><FONT face=Arial 
+                  >&nbsp;<IMG height=15 alt="" src="..\images\BarD.ICO" >&nbsp;<B 
+                  >D</B>escending Bar<FONT face=Arial 
+                  ></FONT></FONT></TD></TR>
+              <TR>
+                <TD align=center><FONT face=Arial 
+                  >&nbsp;<B 
+                >A</B></FONT></TD>
+                <TD align=left><FONT face=Arial 
+                  >&nbsp;<IMG height=15 alt="" src="..\images\BarA.ICO" >&nbsp;<B 
+                  >A</B>csending Bar<FONT face=Arial 
+                  ></FONT></FONT></TD></TR>
+              <TR>
+                <TD align=center><FONT face=Arial 
+                  >&nbsp;<B 
+                >T</B></FONT></TD>
+                <TD align=left><FONT face=Arial 
+                  >&nbsp;<IMG height=15 alt="" src="..\images\BarT.ICO" >&nbsp;<B 
+                  >T</B>rack Bar</FONT></TD></TR>
+              <TR>
+                <TD align=left><FONT face=Arial 
+                  >&nbsp; <IMG height=15 alt="" src="..\images\key07.ICO" width=30 >&nbsp;Backspace</FONT></TD>
+                <TD align=center><FONT face=Arial 
+                  >Clear Previous</FONT></TD></TR>
+              <TR>
+                <TD align=center><FONT face=Arial 
+                  >Delete</FONT></TD>
+                <TD align=center><FONT face=Arial 
+                  >Clear Next<FONT face=Arial 
+                  ></FONT></FONT></TD></TR></TABLE></TD></TR>
+        <tr>
+          <td><span id="Label3">Special Services:</span></TD>
+          <td><span id="LabelSpecial">260</span></TD></TR>
+        <tr>
+          <td><span id="Label4">Mailer ID:</span></TD>
+          <td><span id="LabelCustID">102377</span></TD></TR>
+        <tr>
+          <td><span id="Label5">Serial Number:</span></TD>
+          <td><span id="LabelSeq">000576925</span></TD></TR>
+        <tr>
+          <td><span id="Label2">Delivery Point ZIP Code:&nbsp;</span></TD>
+          <td><span id="LabelRouting">55369912956</span></TD></TR></TABLE><p><a href="barcode_decoder2.aspx">Switch to 9-digit Mailer ID barcode construct</a></p></form></TD></TR></TABLE>
+<p align=center><font face="verdana, arial, helvetica" 
+size=1>If you need assistance with this application, please 
+contact the<br> U. S. Postal Service National Customer Support 
+Center at 877-640-0724<br> option 2 or email the NCSC at <A href="mailto: onecodesolution@usps.gov">onecodesolution@usps.gov</A> 
+</FONT></P>  
+  
+	</BODY>
+</HTML>
